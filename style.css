@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+.fan {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fan button {
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+}
+
+.fan button:hover {
+    background-color: #d8810e;
+    color: #fff;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    padding: 50px;
+    border-radius: 50%;
+    animation: fananimi linear infinite;
+
+}
+
+@keyframes fananimi {
+    100% {
+        transform: rotate(360deg);
+    }
+}
